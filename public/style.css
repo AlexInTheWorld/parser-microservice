@@ -1,0 +1,95 @@
+/****** Main Styling ******/
+html {
+  margin: 5px;
+  font-size: 16px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #222;
+	background-color: #FaFaFa;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.footer {
+	margin-top: 40px;
+}
+
+.user-stories {
+  position: relative;
+  text-align: justify;
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+code {
+  font-family: monospace;
+  padding: 2px;
+  color: black;
+  background-color: #fff;
+  font-size: 0.9rem;
+}
+
+ol {
+	list-style-position: outside;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+.user-stories li {
+  margin-bottom: 1em;
+}
+
+a {
+	color: #2574A9;
+}
+
+.tooltip {
+  font-size: 0.8rem;
+  padding: 2px;
+}
+
+.author {
+  display: inline-block;
+  background-color: lightgray;
+  border-radius: 10%;
+  cursor: pointer;
+  line-height: 2.2rem; 
+  font-size: 1.1rem;
+}
+
+button {
+  width: 8rem;
+  height: 3rem;
+  font: italic 2rem Arial;
+}
+
+#select-option {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #ddd;
+}

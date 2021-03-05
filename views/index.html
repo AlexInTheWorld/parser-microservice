@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>Request Header Parser</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+        <h2>API Project: Request Header Parser Microservice</h2>
+        <h3>User Story: </h3>
+        1. I can get the IP address, preferred languages (from header <code>Accept-Language</code>)<br> and system infos (from header <code>User-Agent</code>) for my device.
+
+        <h3>Example Usage:</h3>
+        <p>
+          https:my-sys-info.glitch.me/api/whoami
+        </p>
+
+        <h3>Example Output:</h3>
+        <p>
+          <code>{"ipaddress":"::ffff:159.20.14.100", <br>"language":"en-US,en;q=0.5", "software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</code>
+        </p>
+      </div>
+      <div class="footer">
+        <span class="author" onclick="authorinfo(document.querySelector('.tooltip'))" >&emsp;Alex K.&emsp;</span>
+          <p class="tooltip"></p>
+      </div>
+     
+<script>
+  function applystyle(el) {
+    el.style.border = "1px solid #993300";
+    el.style.background = "lightyellow";
+  }
+  function erasestyle(el) {
+    el.style.border = "none";
+    el.style.background = "none";
+  }
+  function authorinfo(element) {
+    if (element.textContent == "") {
+      element.textContent = "Alex K. aka A.K. is an adventurous programmer and web developer in his spare time. \n When he doesn't code he writes inaugurational speeches for remarkable presidents.";
+      applystyle(element);
+    } else { 
+      element.textContent = "";
+      erasestyle(element);
+    }
+  }
+</script>
+     
+   </body>
+
+
+</html>
